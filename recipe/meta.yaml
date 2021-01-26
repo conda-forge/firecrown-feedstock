@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python
     - pip
   run:
-    - python >=3
+    - python
     - pyccl >=2.0,<3
     - numpy
     - pyyaml
