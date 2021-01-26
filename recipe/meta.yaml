@@ -9,16 +9,16 @@ source:
   sha256: a98ca4e37f73192a45396fa0089563bd54861ca9625738a06df4dab7e44fd107
 
 build:
-  noarch: python
-  number: 1
+  skip: true  # [win]
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3
+    - python
     - pip
   run:
-    - python >=3
+    - python
     - pyccl >=2.0,<3
     - numpy
     - pyyaml
