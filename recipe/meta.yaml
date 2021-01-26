@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - scipy
     - click
     - jinja2
-    - sacc >=0.3,<0.4
+    - sacc >=0.4.5,<0.5
     - cosmosis-standalone >=0.2.2
 
 test:
