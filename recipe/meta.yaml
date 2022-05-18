@@ -24,12 +24,8 @@ requirements:
     - python
     - pyccl >=2.0,<3
     - numpy
-    - pyyaml
     - scipy
-    - click
-    - jinja2
     - sacc >=0.4.5,<0.5
-    - cosmosis-standalone >=0.2.2
 
 test:
   imports:
