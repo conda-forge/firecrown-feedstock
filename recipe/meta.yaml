@@ -9,7 +9,7 @@ source:
   sha256: c141625fc9196925f9aa1324938e48259febf0beeef37d19357efaa489de96e8
 
 build:
-  skip: true  # [win]
+  skip: true  # [win or py<38]
   number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python
     - pip
   run:
-    - python >=3.8
+    - python
     - pyccl
     - numpy
     - scipy
