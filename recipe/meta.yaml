@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: firecrown
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: c141625fc9196925f9aa1324938e48259febf0beeef37d19357efaa489de96e8
+  sha256: d77e4890acc199bccf59b41c536f485a1767e0cfa17edef368e2bd021f5be872
 
 build:
   skip: true  # [win or py<38]
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -41,3 +41,4 @@ extra:
   recipe-maintainers:
     - vitenti
     - beckermr
+    - marcpaterno
