@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<38]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - pyccl
+    - pyccl ==2.8.0
     - numpy
     - scipy
     - sacc
