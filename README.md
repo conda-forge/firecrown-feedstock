@@ -220,5 +220,6 @@ Feedstock Maintainers
 
 * [@beckermr](https://github.com/beckermr/)
 * [@marcpaterno](https://github.com/marcpaterno/)
+* [@mattkwiecien](https://github.com/mattkwiecien/)
 * [@vitenti](https://github.com/vitenti/)
 
