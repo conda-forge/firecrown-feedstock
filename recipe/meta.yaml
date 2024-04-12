@@ -1,4 +1,4 @@
-{% set version = "1.7.2" %}
+{% set version = "1.7.3" %}
 
 package:
   name: firecrown
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: b915d6744c1106e02ff8c8d198020722dd28046088284ec2c22b4ee4fe41f326
+  sha256: 0c06c6cd8c562a85ba985acb7e2269f4bfc5c7bec7ad31c31c86b5b508eba9be
 
 build:
   skip: true  # [win or py<39]
