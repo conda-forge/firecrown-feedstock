@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: 0c06c6cd8c562a85ba985acb7e2269f4bfc5c7bec7ad31c31c86b5b508eba9be
+  sha256: 92069ee34a30f39d109ee5cca6e71bf94184b5d9da1846c52a63d76d06952e16
 
 build:
   skip: true  # [win or py<39]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
