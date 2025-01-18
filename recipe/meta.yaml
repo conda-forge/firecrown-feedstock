@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<39]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,13 +20,14 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - charset-normalizer
     - cosmosis >=3.0.0
     - cosmosis-build-standard-library
     - coverage
-    - cython <3.0.0
+    - cython
     - dill
     - fitsio
     - flake8
