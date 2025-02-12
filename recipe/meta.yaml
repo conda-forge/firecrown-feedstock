@@ -42,6 +42,7 @@ requirements:
     - portalocker
     - pybobyqa
     - pyccl >=2.8.0
+    - pydantic
     - pyyaml
     - requests
     - sacc >=0.11
