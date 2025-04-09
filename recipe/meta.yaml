@@ -24,6 +24,7 @@ requirements:
   run:
     - python
     - charset-normalizer
+    - clmm
     - cosmosis >=3.0.0
     - cosmosis-build-standard-library
     - coverage
