@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win or py<310]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
   run:
     - python
     - charset-normalizer
+    - clmm
     - cosmosis >=3.0.0
     - cosmosis-build-standard-library
     - coverage
