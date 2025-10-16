@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "1.12.0" %}
 
 package:
   name: firecrown
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: 7be24649782f08ed2bca8ab4bf73d0e98b58905773d32741574b2795ff76cde7
+  sha256: 3c05b93b706d691f13fd45e9468399d71770283728d0ed16a3b09c5184de88c6
 
 build:
-  skip: true  # [win or py<310]
+  skip: true  # [win or py<311]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,32 +22,32 @@ requirements:
     - pip
     - setuptools
   run:
-    - python
     - charset-normalizer
     - clmm
     - cosmosis >=3.0.0
     - cosmosis-build-standard-library
-    - coverage
     - cython
     - dill
     - fitsio
-    - flake8
     - fuzzywuzzy
     - getdist
     - idna
     - matplotlib-base
     - more-itertools
-    - mypy
     - numcosmo >=0.21.1
-    - numpy >=1.23.0
+    - numpy >=2.0
     - portalocker
     - pybobyqa
     - pyccl >=2.8.0
     - pydantic
+    - python
     - pyyaml
     - requests
-    - sacc >=0.11
-    - scipy
+    - rich
+    - sacc >=2.1
+    - scipy >=1.12
+    - tabulate
+    - typer
     - types-pyyaml
     - urllib3
 
@@ -66,4 +66,3 @@ extra:
     - marcpaterno
     - vitenti
     - beckermr
-    - mattkwiecien
