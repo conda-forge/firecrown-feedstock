@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: 3c05b93b706d691f13fd45e9468399d71770283728d0ed16a3b09c5184de88c6
+  url: https://github.com/LSSTDESC/firecrown/releases/download/v1.12.0/firecrown-1.12.0-fixed.tar.gz
+  sha256: 07fe9f9723136f171223e54145daaaa3ff5a760d8c455e22fa85a092bf695633
 
 build:
   skip: true  # [win or py<311]
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
