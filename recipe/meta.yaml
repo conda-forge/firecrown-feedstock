@@ -5,13 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/LSSTDESC/firecrown/archive/v{{ version }}.tar.gz
-  sha256: 8cf67ee98dcdd891e4b4fc3f249fc79e41a5d5b2a585a2ebbb036352216043bd
+  url: https://github.com/LSSTDESC/firecrown/releases/download/v{{ version }}/firecrown-{{ version }}.tar.gz
+  sha256: ef95dcb6989b636191d2ea0d235e1783c57d0edbf64379e7f454c0824fb419a8
 
 build:
   skip: true  # [win or py<311]
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
@@ -21,6 +21,7 @@ requirements:
     - python
     - pip
     - setuptools
+    - setuptools-scm
   run:
     - charset-normalizer
     - clmm
@@ -54,6 +55,8 @@ requirements:
 test:
   imports:
     - firecrown
+  commands:
+    - {{ PYTHON }} -c "import firecrown, importlib.metadata as md; assert firecrown.__version__ == '{{ version }}'; assert md.version('firecrown') == '{{ version }}'"
 
 about:
   home: https://github.com/LSSTDESC/firecrown
