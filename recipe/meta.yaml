@@ -1,4 +1,4 @@
-{% set version = "1.15.0" %}
+{% set version = "1.15.1" %}
 
 package:
   name: firecrown
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/firecrown/releases/download/v{{ version }}/firecrown-{{ version }}.tar.gz
-  sha256: ef95dcb6989b636191d2ea0d235e1783c57d0edbf64379e7f454c0824fb419a8
+  sha256: a1e121f7c20077411fad397c72f8861da02369f2662c78874388728c84b37176
 
 build:
   skip: true  # [win or py<311]
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
