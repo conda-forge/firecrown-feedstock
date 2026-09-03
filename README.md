@@ -1,7 +1,11 @@
-About firecrown-feedstock
-=========================
+About firecrown-split-feedstock
+===============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/firecrown-feedstock/blob/main/LICENSE.txt)
+
+
+About firecrown-split
+---------------------
 
 Home: https://github.com/LSSTDESC/firecrown
 
@@ -9,62 +13,52 @@ Package license: BSD-3-Clause
 
 Summary: DESC Cosmology Likelihood Framework
 
+About firecrown-deps
+--------------------
+
+
+
+Package license: 
+
+Summary: Runtime dependencies of firecrown
+
+About firecrown-deps-validated
+------------------------------
+
+
+
+Package license: 
+
+Summary: Runtime dependencies of firecrown, restricted to validated versions
+
+About firecrown-devenv
+----------------------
+
+
+
+Package license: 
+
+Summary: Everything needed to develop, test and document firecrown
+
+About firecrown-validated
+-------------------------
+
+
+
+Package license: 
+
+Summary: firecrown, restricted to the dependency versions it was validated against
+
 Current build status
 ====================
 
 
 <table><tr>
-    <td>GitHub Actions</td>
+    <td>All platforms:</td>
     <td>
       <a href="https://github.com/conda-forge/firecrown-feedstock/actions/workflows/conda-build.yml">
         <img src="https://github.com/conda-forge/firecrown-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Azure</td>
-    <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9430&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/firecrown-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>osx_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9430&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/firecrown-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9430&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/firecrown-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.13.____cp313</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9430&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/firecrown-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.14.____cp314</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9430&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/firecrown-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
     </td>
   </tr>
 </table>
@@ -75,42 +69,88 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-firecrown-green.svg)](https://anaconda.org/conda-forge/firecrown) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/firecrown.svg)](https://anaconda.org/conda-forge/firecrown) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/firecrown.svg)](https://anaconda.org/conda-forge/firecrown) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/firecrown.svg)](https://anaconda.org/conda-forge/firecrown) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-firecrown--deps-green.svg)](https://anaconda.org/conda-forge/firecrown-deps) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/firecrown-deps.svg)](https://anaconda.org/conda-forge/firecrown-deps) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/firecrown-deps.svg)](https://anaconda.org/conda-forge/firecrown-deps) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/firecrown-deps.svg)](https://anaconda.org/conda-forge/firecrown-deps) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-firecrown--deps--validated-green.svg)](https://anaconda.org/conda-forge/firecrown-deps-validated) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/firecrown-deps-validated.svg)](https://anaconda.org/conda-forge/firecrown-deps-validated) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/firecrown-deps-validated.svg)](https://anaconda.org/conda-forge/firecrown-deps-validated) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/firecrown-deps-validated.svg)](https://anaconda.org/conda-forge/firecrown-deps-validated) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-firecrown--devenv-green.svg)](https://anaconda.org/conda-forge/firecrown-devenv) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/firecrown-devenv.svg)](https://anaconda.org/conda-forge/firecrown-devenv) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/firecrown-devenv.svg)](https://anaconda.org/conda-forge/firecrown-devenv) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/firecrown-devenv.svg)](https://anaconda.org/conda-forge/firecrown-devenv) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-firecrown--validated-green.svg)](https://anaconda.org/conda-forge/firecrown-validated) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/firecrown-validated.svg)](https://anaconda.org/conda-forge/firecrown-validated) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/firecrown-validated.svg)](https://anaconda.org/conda-forge/firecrown-validated) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/firecrown-validated.svg)](https://anaconda.org/conda-forge/firecrown-validated) |
 
-Installing firecrown
-====================
+Installing firecrown-split
+==========================
 
-Installing `firecrown` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `firecrown-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `firecrown` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
-conda install firecrown
+conda install firecrown firecrown-deps firecrown-deps-validated firecrown-devenv firecrown-validated
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
-mamba install firecrown
+mamba install firecrown firecrown-deps firecrown-deps-validated firecrown-devenv firecrown-validated
 ```
 
-It is possible to list all of the versions of `firecrown` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add firecrown firecrown-deps firecrown-deps-validated firecrown-devenv firecrown-validated
+# for installing globally
+pixi global install firecrown firecrown-deps firecrown-deps-validated firecrown-devenv firecrown-validated
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `firecrown` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search firecrown --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search firecrown --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search firecrown --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -122,6 +162,8 @@ mamba repoquery whoneeds firecrown --channel conda-forge
 # List dependencies of `firecrown`:
 mamba repoquery depends firecrown --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -165,17 +207,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating firecrown-feedstock
-============================
+Updating firecrown-split-feedstock
+==================================
 
-If you would like to improve the firecrown recipe or build a new
+If you would like to improve the firecrown-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/firecrown-feedstock are
+Note that all branches in the conda-forge/firecrown-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
